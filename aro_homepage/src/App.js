@@ -1,15 +1,17 @@
 import "./App.scss";
-import ProgressBar from "./components/ProgressBar";
+import cn from "classnames";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import MemberInformationSummaryPage from "./pages/MemberInformationSummaryPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <ProgressBar />
-      <body>
-      </body>
-        <div>ARO</div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/member" element={<MemberInformationSummaryPage />} />
+    </Routes>
   );
-}
+};
 
 export default App;

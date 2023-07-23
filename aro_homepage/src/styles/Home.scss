@@ -1,0 +1,65 @@
+.Homepage {
+  margin: 0;
+  padding: 0;
+
+  .Homepage_body {
+    text-align: center;
+
+    .logo_container {
+      height: 180px;
+      background-color: #252525;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .HomeIntroduceContainer {
+      margin-top: 4em;
+      display: flex;
+      margin-left: 4em;
+      height: auto;
+      width: auto;
+
+      .aro_slogan {
+        width: 40px;
+        opacity: 0;
+        animation: slideUp 1s ease-out forwards;
+        font-size: 2.7em; // 사이즈를 키웁니다.
+        font-weight: bold; // 굵게 합니다.
+        font-style: italic; // 기울임을 적용합니다.
+        color: #1d1d1d;
+
+        .GoogleButtonContainer {
+          margin-top: 2em;
+          .GoogleButton {
+            width: 2em;
+            height: 2em;
+          }
+        }
+      }
+
+      .ARO_user_image_container {
+        position: fixed;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        overflow: hidden; // 이미지가 컨테이너를 벗어나면 숨김
+
+        .AROUserImage {
+          height: 40em;
+        }
+      }
+
+      @keyframes slideUp {
+        0% {
+          transform: translateY(40%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

@@ -7,13 +7,13 @@
     left: 0;
   
     #progressBar {
-      background: linear-gradient(to right, rgb(65, 197, 125), rgb(55, 92, 147));
+      background: linear-gradient(to right, rgb(65, 197, 125), rgb(30, 66, 144));
       transform-origin: top left;
       transform: scale(0, 0);
       opacity: 1;
     }
     #progressBarContainer,
     #progressBar {
-      height: 10px;
+      height: 14px;
     }
   }

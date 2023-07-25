@@ -84,7 +84,7 @@
     }
 
     .HomeIntroduceContainer1 {
-      z-index: 1; 
+      z-index: 1;
       overflow: hidden;
       width: auto;
       height: 1400px;
@@ -105,15 +105,13 @@
         align-items: center;
         text-align: center;
 
-
         .IntroduceContainer1Img {
           position: relative;
-           width: 100%;
+          width: 100%;
           height: auto;
           overflow: hidden;
         }
       }
-
 
       .IntroduceContainer1ImgSection::before {
         content: "";
@@ -136,22 +134,21 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        transition: transform 0.5s;  /* transition 효과를 이용한 애니메이션 */
-  
+        transition: transform 0.5s; /* transition 효과를 이용한 애니메이션 */
+
         .HomeIntroduceContainer1Feature {
           font-family: "Pretendard";
           font-size: 74px;
           font-weight: bold;
         }
-  
+
         .HomeIntroduceContainer1Description {
           font-family: "hakgyoansim";
           font-size: 16px;
           padding-top: 20px;
           font-style: italic;
         }
-  
-  
+
         @keyframes slide-in {
           from {
             transform: translateX(-100%);
@@ -163,10 +160,8 @@
       } // End of HomeIntroduceContainer1
     }
 
-
-
     .HomeIntroduceContainer2 {
-      z-index: 1; 
+      z-index: 1;
       overflow: hidden;
       width: auto;
       height: 1400px;
@@ -186,16 +181,17 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-
+        background-position: center center; 
+        background-size: cover;
 
         .IntroduceContainer2Img {
+          max-width: 140%; /* 이미지가 컨테이너를 벗어나지 않도록 함 */
+          max-height: 140%; /* 이미지가 컨테이너를 벗어나지 않도록 함 */
           position: relative;
-           width: 100%;
-          height: auto;
+          width: 100%;
           overflow: hidden;
         }
       }
-
 
       .IntroduceContainer2ImgSection::before {
         content: "";
@@ -218,22 +214,21 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        transition: transform 0.5s;  /* transition 효과를 이용한 애니메이션 */
-  
+        transition: transform 0.5s; /* transition 효과를 이용한 애니메이션 */
+
         .HomeIntroduceContainer2Feature {
           font-family: "Pretendard";
           font-size: 74px;
           font-weight: bold;
         }
-  
+
         .HomeIntroduceContainer2Description {
           font-family: "hakgyoansim";
           font-size: 16px;
           padding-top: 20px;
           font-style: italic;
         }
-  
-  
+
         @keyframes slide-in {
           from {
             transform: translateX(-100%);
@@ -245,9 +240,8 @@
       } // End of HomeIntroduceContainer2
     }
 
-
     .HomeIntroduceContainer3 {
-      z-index: 1; 
+      z-index: 1;
       overflow: hidden;
       width: auto;
       height: 1400px;
@@ -268,15 +262,13 @@
         align-items: center;
         text-align: center;
 
-
         .IntroduceContainer3Img {
           position: relative;
-           width: 100%;
+          width: 100%;
           height: auto;
           overflow: hidden;
         }
       }
-
 
       .IntroduceContainer3ImgSection::before {
         content: "";
@@ -299,22 +291,21 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        transition: transform 0.5s;  /* transition 효과를 이용한 애니메이션 */
-  
+        transition: transform 0.5s; /* transition 효과를 이용한 애니메이션 */
+
         .HomeIntroduceContainer3Feature {
           font-family: "Pretendard";
           font-size: 74px;
           font-weight: bold;
         }
-  
+
         .HomeIntroduceContainer3Description {
           font-family: "hakgyoansim";
           font-size: 16px;
           padding-top: 20px;
           font-style: italic;
         }
-  
-  
+
         @keyframes slide-in {
           from {
             transform: translateX(-100%);
@@ -325,8 +316,6 @@
         }
       } // End of HomeIntroduceContainer3
     }
-
-
   } // End of Homepage_body
 
   .HomepageFoot {
@@ -338,8 +327,7 @@
     text-align: center;
     //margin-top: 10em;
     display: flex;
-    z-index: 102;  /* z-index가 낮음 */
-
+    z-index: 102; /* z-index가 낮음 */
 
     .FootAppIcon {
       margin-top: 30px;
@@ -353,6 +341,7 @@
     }
 
     .FootDeveloperIntroduce {
+      text-decoration: none;
       color: #252525;
       font-family: "hakgyoansim";
       font-weight: 1200;
@@ -361,6 +350,7 @@
     }
 
     .FootMemberSummary {
+      text-decoration: none;
       color: #252525;
       font-family: "hakgyoansim";
       font-weight: 1200;

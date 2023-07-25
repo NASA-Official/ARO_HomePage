@@ -5,11 +5,14 @@ import { ReactComponent as Aro_logo } from "../images/Aro_logo.svg";
 import "../styles/Home.scss";
 import GoogleButton from "../components/GoogleButton";
 import AROUserimage from "../images/ARO_user_image.png";
+import ARODiaryimage from "../images/ARO_diary_img.png";
+import AROStampimage from "../images/ARO_stamp_img.png";
 
 import { ReactComponent as AROIcon } from "../images/ARO_app_icon.svg";
 import { ReactComponent as AROstampImg } from "../images/ARO_stamp_img.svg";
 import { ReactComponent as AROGraphImg } from "../images/ARO_graph_img.svg";
 import { ReactComponent as ARODiaryImg } from "../images/ARO_diary_img.svg";
+import { Link } from "react-router-dom"
 
 const Home = () => {
 
@@ -63,7 +66,7 @@ const Home = () => {
 
         <div className={cn("HomeIntroduceContainer2")}>
           <div className={cn("IntroduceContainer2ImgSection")}>
-            <AROstampImg
+            <img src={AROStampimage}
               className={cn("IntroduceContainer2Img")}
             />
           </div>
@@ -80,7 +83,7 @@ const Home = () => {
 
         <div className={cn("HomeIntroduceContainer3")}>
           <div className={cn("IntroduceContainer3ImgSection")}>
-            <ARODiaryImg
+            <img src={ARODiaryimage}
               className={cn("IntroduceContainer3Img")}
             />
           </div>
@@ -96,8 +99,6 @@ const Home = () => {
 
 
 
-
-
       </div>
 
       <div className={cn("Spacer")} />
@@ -110,7 +111,7 @@ const Home = () => {
           <div className={cn("FootAppName")}>ARO</div>
         </div>
         <div className={cn("FootDeveloperIntroduce")}>소개</div>
-        <div className={cn("FootMemberSummary")}>개인정보 처리방침</div>
+        <Link className={cn("FootMemberSummary")} to="/memberSummary">개인정보 처리방침</Link>
       </div>
     </div>
   );
